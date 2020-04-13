@@ -1,0 +1,27 @@
+{
+  "name": "Rubrica",
+  "version": "1.0",
+  "description": "Utility per evitare i ritardi alle videolezioni",
+  "permissions": ["activeTab", "storage", "notifications"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/rubrica16.png",
+        "32": "images/rubrica32.png",
+        "48": "images/rubrica48.png",
+        "128": "images/rubrica128.png"
+      }
+    },
+    "icons": {
+      "16": "images/rubrica16.png",
+      "32": "images/rubrica32.png",
+      "48": "images/rubrica48.png",
+      "128": "images/rubrica128.png"
+    },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
