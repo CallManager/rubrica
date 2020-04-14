@@ -2,7 +2,7 @@
   "name": "Rubrica",
   "version": "1.0",
   "description": "Utility per evitare i ritardi alle videolezioni",
-  "permissions": ["activeTab", "storage", "notifications"],
+  "permissions": ["activeTab", "storage", "notifications", "declarativeContent", "tabs"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
