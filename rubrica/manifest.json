@@ -23,5 +23,6 @@
       "128": "images/rubrica128.png"
     },
   "options_page": "options.html",
+  "content_security_policy": "script-src 'self' https://demos.creative-tim.com/; object-src 'self'",
   "manifest_version": 2
 }
