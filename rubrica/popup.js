@@ -56,8 +56,11 @@ if (getCurrentSubj === undefined && nextSubj === undefined && nexxtSubj === unde
   if (hh >= 13 && hh <= 19){
     var getCurrentSubj = "Buon pomeriggio, non c'è nulla da mostrare."
   }
-  if (hh >= 19 && hh <= 6){
-    var getCurrentSubj = "Sei un gufo. non c'è nulla da mostrare."
+  if (hh >= 19 && hh <= 23){
+    var getCurrentSubj = "Buoonasseraaa! Tutto bene?"
+  }
+  if (hh >= 0 && hh <= 5){
+    var getCurrentSubj = "Sei un gufo. Non c'è nulla da mostrare."
   }
   if (hh >= 6 && hh <= 7){
     var getCurrentSubj = "Buongiornissimo, kaffe?? Preparati per le videolezioni."
