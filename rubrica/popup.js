@@ -92,9 +92,10 @@ document.getElementById("nexxt").innerText = nexxtSubj;
 // --------- END SUBJECTS --------
 
 //GET LINKS TO MEETING SERVICES
-var zoomStart = "https://zoom.us/j/";
+/*var zoomStart = "https://zoom.us/j/";
 var zoomID = document.getElementById("numb").value;
-
+*/
 // BUTTON
-var a = document.getElementById('joinA');
+/*var a = document.getElementById('joinA');
 a.setAttribute('href', 'display: none');
+*/

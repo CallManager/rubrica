@@ -1,4 +1,20 @@
-document.getElementById("zoomid").addEventListener("click", submit);
+document.getElementById("piattaformaFisica").addEventListener("change", getPlatFisica)
+  function getPlatFisica() {
+    var selectedPlatformFisica = document.getElementById("piattaformaFisica").value;
+    console.log(selectedPlatformFisica)
+    if(selectedPlatformFisica === "Meet"){
+    	document.getElementById("alertMeetFisica").setAttribute('style', 'display: block');
+    }if(selectedPlatformFisica != "Meet"){
+        document.getElementById("alertMeetFisica").setAttribute('style', 'display: none');
+    };
+  }
+
+
+
+
+
+
+/*document.getElementById("zoomid").addEventListener("click", submit);
     function submit(){
       var zoomid = document.getElementById("zoomid").value;
 
@@ -9,3 +25,4 @@ document.getElementById("zoomid").addEventListener("click", submit);
                   console.log('Value currently is ' + result.tatu);
                 });
    }
+*/

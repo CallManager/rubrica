@@ -68,7 +68,7 @@
                           <div class="card-body">
                             <table><tr>
                               <th><label for="piattaforma1">Piattaforma</label>
-                                <select class="form-control" id="piattaformaFisica" style="color: black;background: #b6b9f5;"><option>Meet</option><option>Zoom</option><option>Webex</option> </select></th>
+                                <select class="form-control" id="piattaformaFisica" onchange="getPlatFisica()" style="color: black;background: #b6b9f5;"><option value="Meet">Meet</option><option value="Zoom" selected="selected">Zoom</option><option value="WebEx">Webex</option> </select></th>
                                 <th><div class=container></div></th>
                                 <th><label for="Codice1">Codice</label>
                                     <input id="codiceFisica" type="text" value="" placeholder="Codice" class="form-control"></th>
@@ -78,7 +78,7 @@
                                   <th><div class=container></div></th>
                                   <th><table><tbody><tr><p for="saveButton2" style="text-align: center;font-weight: bold;font-size: smaller;color:orange;">Non salvato!</p></tr><tr><button class="btn btn-success btn-round" id="saveButton1" type="button">Salva</button></tr></tbody></table></th>
                                   <th><div class="container"></div></th>
-                                  <th><div class="alert alert-danger" role="alert" style="margin-bottom: 0px;">Se scegli Meet devi cliccare qui!</div></th>
+                                  <th><div id="alertMeetFisica" class="btn btn-danger alert alert-danger" role="alert" style="margin-bottom: 0px; display:none;" data-toggle="modal" data-target="#myModal">Se scegli Meet devi cliccare qui!</div></th>
                               </tr></table>
                           </div>
                         </div>
@@ -186,10 +186,29 @@
       </div>
     </footer>
   </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+              <h4 class="title title-up">Google Meet</h4>
+            </div>
+            <div class="modal-body">
+              <p>Credevi ci fosse un iFrame eh? NO! work in progress...</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default">Nice Button</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
   <!--   Core JS Files   -->
   <script src="https://demos.creative-tim.com/blk-design-system-pro/assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="https://demos.creative-tim.com/blk-design-system-pro/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-  <script src=
   <script src="https://demos.creative-tim.com/blk-design-system-pro/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <script src="https://demos.creative-tim.com/blk-design-system-pro/assets/js/blk-design-system-pro.min.js?v=1.0.0" type="text/javascript"></script>
+  <script src="options.js" type="text/javascript"></script>
 </body></html>
