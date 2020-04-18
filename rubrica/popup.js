@@ -43,7 +43,7 @@ if       (ng == "lun") {
 }else if (ng == "ven") {
   var currentDay = 4
 }else if (ng == "sab") {
-  var currentSubj = 5;
+  var currentDay = 5;
 }
 
 //GET SUBJECTS
